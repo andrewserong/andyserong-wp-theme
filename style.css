@@ -4,7 +4,7 @@ Theme URI: https://github.com/andrewserong/andyserong-wp-theme
 Author: Andrew Serong
 Author URI: https://github.com/andrewserong
 Description: A one-off theme for andyserong.com
-Version: 1.0.4
+Version: 1.0.6
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: andyserong
@@ -275,8 +275,8 @@ textarea {
 	color: #111111;
 	font-family: Lora, Georgia, Times, "Times New Roman", serif;
 	font-size: 18px;
-	font-size: 1.125rem;
-	line-height: 1.45;
+	font-size: 1.1rem;
+	line-height: 1.8;
 }
 
 h1,
@@ -307,12 +307,9 @@ h1, h2, h3, h4 {
 
 p {
 	font-family: Lora, Georgia, Times, "Times New Roman", serif;
-	font-size: 19px;
-	font-size: 1.2rem;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 400;
-	line-height: 1.8rem;
 }
 
 blockquote {
@@ -430,6 +427,11 @@ ol {
 ul {
 	list-style: disc;
 	padding-left: 1em;
+}
+
+ul li {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
 }
 
 ol {
@@ -598,6 +600,8 @@ a:active {
 	display: inline-block;
 	margin: 0 auto;
 	text-align: center;
+	font-size: 18px;
+	font-size: 1.125rem;	
 	vertical-align: top;
 }
 
@@ -1171,6 +1175,11 @@ p.barely-visible-footer {
 /*--------------------------------------------------------------
 ## Gutenberg styling
 --------------------------------------------------------------*/
+
+.wp-block-separator {
+	border: none;
+	background-color: #676782;
+}
 
 @media screen and (max-width: 480px) {
 	.wp-block-image {
