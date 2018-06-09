@@ -1,10 +1,10 @@
 /*
 Theme Name: andyserong.com
-Theme URI: http://underscores.me/
+Theme URI: https://github.com/andrewserong/andyserong-wp-theme
 Author: Andrew Serong
 Author URI: https://github.com/andrewserong
 Description: A one-off theme for andyserong.com
-Version: 1.0.3
+Version: 1.0.4
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: andyserong
@@ -42,6 +42,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 	## Captions
 	## Galleries
 # Site content layout
+# Gutenberg styling
 --------------------------------------------------------------*/
 
 @import url('https://fonts.googleapis.com/css?family=Lora');
@@ -427,8 +428,8 @@ ol {
 }
 
 ul {
-	list-style: none;
-	padding-left: 0em;
+	list-style: circle;
+	padding-left: 1em;
 }
 
 ol {
@@ -1164,4 +1165,20 @@ p.barely-visible-footer {
 .post .entry-meta {
 	margin-bottom: 1.5em;
 	text-align: center;
+}
+
+/*--------------------------------------------------------------
+## Gutenberg styling
+--------------------------------------------------------------*/
+
+@media screen and (max-width: 480px) {
+	.wp-block-image {
+		min-width: 100%;
+		height: auto;
+	}
+
+	.wp-block-image img {
+		width: 100%;
+		height: auto;
+	}
 }
