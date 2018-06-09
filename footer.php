@@ -28,6 +28,9 @@
 				<a href="https://codepen.io/andrewserong/" target="_blank">
 					<i class="fa fa-codepen" aria-hidden="true"></i>
 				</a>
+				<a href="https://medium.com/@andrewserong" target="_blank">
+					<i class="fa fa-medium" aria-hidden="true"></i>
+				</a>
 			</p>
 			<p class="barely-visible-footer">
 				<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'andyserong' ) ); ?>"><?php
@@ -36,7 +39,7 @@
 				?>
 				</a>
 				<br/>
-				A <a href="https://github.com/andrewserong/andyserong.com">hand-made theme</a> built on top of <a href="http://underscores.me/" target="_blank">underscores</a>
+				A <a href="https://github.com/andrewserong/andyserong-wp-theme">hand-made theme</a> built on top of <a href="http://underscores.me/" target="_blank">underscores</a>
 			</p>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
