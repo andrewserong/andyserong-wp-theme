@@ -428,7 +428,7 @@ ol {
 }
 
 ul {
-	list-style: circle;
+	list-style: disc;
 	padding-left: 1em;
 }
 
@@ -690,7 +690,9 @@ a:active {
     padding: 0.5em;
     display: inline-block;
     text-align: center;
-    width: 100%;
+	width: 100%;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
 }
 
 .site-main .comment-navigation,
