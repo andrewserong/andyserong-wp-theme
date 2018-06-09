@@ -364,6 +364,8 @@ var {
 	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 	font-size: 15px;
 	font-size: 0.9375rem;
+	background-color: #efefef;
+    padding: 0.25em;
 }
 
 abbr,
