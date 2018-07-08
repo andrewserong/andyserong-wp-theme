@@ -4,7 +4,7 @@ Theme URI: https://github.com/andrewserong/andyserong-wp-theme
 Author: Andrew Serong
 Author URI: https://github.com/andrewserong
 Description: A one-off theme for andyserong.com
-Version: 1.0.9
+Version: 1.0.10
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: andyserong
@@ -417,7 +417,6 @@ hr {
 	background-color: #ccc;
 	border: 0;
 	height: 1px;
-	margin-bottom: 1.5em;
 }
 
 ul,
@@ -1186,6 +1185,7 @@ p.barely-visible-footer {
 .wp-block-separator {
 	border: none;
 	background-color: #676782;
+	max-width: 8rem;
 }
 
 @media screen and (max-width: 480px) {
