@@ -28,9 +28,11 @@
 
 	<?php if ( has_post_thumbnail() ) : ?>
 	
+	<!--
 		<div class="entry-featured-image">
 			<?php echo the_post_thumbnail( 'large' ); ?>
 		</div>
+	-->
 		
 	<?php endif; ?>
 
