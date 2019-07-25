@@ -67,6 +67,13 @@ function andyserong_setup() {
 
 	// Add theme support for selective refresh for widgets.
 	add_theme_support( 'customize-selective-refresh-widgets' );
+
+	/**
+	 * Enable support for wide alignment on image blocks.
+	 *
+	 * @link https://developer.wordpress.org/block-editor/developers/themes/theme-support/
+	 */
+	add_theme_support( 'align-wide' );
 }
 endif;
 add_action( 'after_setup_theme', 'andyserong_setup' );
@@ -79,7 +86,7 @@ add_action( 'after_setup_theme', 'andyserong_setup' );
  * @global int $content_width
  */
 function andyserong_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'andyserong_content_width', 640 );
+	$GLOBALS['content_width'] = apply_filters( 'andyserong_content_width', 800 );
 }
 add_action( 'after_setup_theme', 'andyserong_content_width', 0 );
 
@@ -166,9 +173,9 @@ require get_template_directory() . '/inc/jetpack.php';
 function remove_image_size_attributes( $html ) {
     return preg_replace( '/(width|height)="\d*"/', '', $html );
 }
- 
+
 // Remove image size attributes from post thumbnails
 add_filter( 'post_thumbnail_html', 'remove_image_size_attributes' );
- 
+
 // Remove image size attributes from images added to a WordPress post
 add_filter( 'image_send_to_editor', 'remove_image_size_attributes' );
