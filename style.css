@@ -4,7 +4,7 @@ Theme URI: https://github.com/andrewserong/andyserong-wp-theme
 Author: Andrew Serong
 Author URI: https://github.com/andrewserong
 Description: A one-off theme for andyserong.com
-Version: 1.0.17
+Version: 1.0.18
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: andyserong
@@ -1194,7 +1194,7 @@ p.barely-visible-footer {
 	border-bottom: 1px solid #9494a6;
 }
 
-.post .entry-title {
+.post .entry-title, .page .entry-title {
 	margin-bottom: 0;
 	text-align: center;
 }
