@@ -4,7 +4,7 @@ Theme URI: https://github.com/andrewserong/andyserong-wp-theme
 Author: Andrew Serong
 Author URI: https://github.com/andrewserong
 Description: A one-off theme for andyserong.com
-Version: 1.0.13
+Version: 1.0.14
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: andyserong
@@ -602,7 +602,7 @@ a:active {
 	margin: 0 auto;
 	text-align: center;
 	font-size: 18px;
-	font-size: 1.125rem;	
+	font-size: 1.125rem;
 	vertical-align: top;
 }
 
@@ -901,6 +901,21 @@ a:active {
 	margin: 0;
 }
 
+.entry-content > *, .entry-footer, .navigation, .comments-area {
+	padding: 1em 1em;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.entry-content .alignwide {
+	max-width: 1024px;
+}
+
+.entry-content .alignfull {
+	max-width: 100%;
+	padding: 1em 0;
+}
+
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
@@ -1039,10 +1054,13 @@ object {
 	padding: 1rem;
 }
 
-.site-content {
+.home .site-content {
 	max-width: 800px;
+	padding: 1em;
 	margin: 0 auto;
-	padding: 1rem;
+}
+
+.site-content {
 	min-height: calc(100vh - 26rem);
 }
 
