@@ -904,7 +904,7 @@ a:active {
 .entry-content > *, .entry-footer, .navigation, .comments-area {
 	padding: 0 1rem;
 	max-width: 800px;
-	margin: 1rem auto;
+	margin: 1em auto;
 }
 
 .entry-content .alignwide {
