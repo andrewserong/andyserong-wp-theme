@@ -4,7 +4,7 @@ Theme URI: https://github.com/andrewserong/andyserong-wp-theme
 Author: Andrew Serong
 Author URI: https://github.com/andrewserong
 Description: A one-off theme for andyserong.com
-Version: 1.0.18
+Version: 1.0.19
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: andyserong
@@ -365,7 +365,7 @@ var {
 	font-size: 15px;
 	font-size: 0.9375rem;
 	background-color: #efefef;
-    padding: 0.25em;
+	padding: 0.25em;
 }
 
 abbr,
@@ -486,13 +486,13 @@ input[type="submit"] {
 
 input.search-field {
 	max-width: 50%;
-    font-size: 1rem;
-    height: 2em;
+	font-size: 1rem;
+	height: 2em;
 }
 
 input.search-submit {
-    line-height: 0;
-    font-size: 1rem;
+	line-height: 0;
+	font-size: 1rem;
 }
 
 button:hover,
@@ -690,11 +690,11 @@ a:active {
 
 /* Gotta be a better selector for this */
 .nav-links a {
-    border-radius: 2px;
-    border: 1px solid #efefef;
-    padding: 0.5em;
-    display: inline-block;
-    text-align: center;
+	border-radius: 2px;
+	border: 1px solid #efefef;
+	padding: 0.5em;
+	display: inline-block;
+	text-align: center;
 	width: 100%;
 	margin-top: 0.5em;
 	margin-bottom: 0.5em;
@@ -740,8 +740,8 @@ a:active {
 	left: 0;
 	top: 50%;
 	-webkit-transform: translateY(-50%);  /* Chrome, Opera 15+, Safari 3.1+ */
-      -ms-transform: translateY(-50%);  /* IE 9 */
-          transform: translateY(-50%);  /* Firefox 16+, IE 10+, Opera */
+	  -ms-transform: translateY(-50%);  /* IE 9 */
+		  transform: translateY(-50%);  /* Firefox 16+, IE 10+, Opera */
 }
 
 .nav-next__icon {
@@ -749,8 +749,8 @@ a:active {
 	right: 0;
 	top: 50%;
 	-webkit-transform: translateY(-50%);  /* Chrome, Opera 15+, Safari 3.1+ */
-      -ms-transform: translateY(-50%);  /* IE 9 */
-          transform: translateY(-50%);  /* Firefox 16+, IE 10+, Opera */
+	  -ms-transform: translateY(-50%);  /* IE 9 */
+		  transform: translateY(-50%);  /* Firefox 16+, IE 10+, Opera */
 }
 
 .nav-btn-text {
@@ -1151,11 +1151,11 @@ object {
 }
 
 .social-media-links {
-    font-size: 1.25rem;
+	font-size: 1.25rem;
 }
 .social-media-links a {
-    display: inline-block;
-    padding: 0.25em;
+	display: inline-block;
+	padding: 0.25em;
 }
 
 p.barely-visible-footer {
@@ -1176,7 +1176,7 @@ p.barely-visible-footer {
 ## Entry content
 --------------------------------------------------------------*/
 .entry-content p a {
-    border-bottom: 1px solid rgba(148,148,166,0.6);
+	border-bottom: 1px solid rgba(148,148,166,0.6);
 }
 
 @media screen and (max-width: 512px) {
@@ -1207,6 +1207,11 @@ p.barely-visible-footer {
 /*--------------------------------------------------------------
 ## Gutenberg styling
 --------------------------------------------------------------*/
+
+.wp-block-image figcaption {
+	text-align: center;
+	font-size: 0.7em;
+}
 
 .wp-block-separator {
 	border: none;
