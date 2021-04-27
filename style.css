@@ -4,7 +4,7 @@ Theme URI: https://github.com/andrewserong/andyserong-wp-theme
 Author: Andrew Serong
 Author URI: https://github.com/andrewserong
 Description: A one-off theme for andyserong.com
-Version: 1.0.19
+Version: 1.0.20
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: andyserong
@@ -1208,7 +1208,8 @@ p.barely-visible-footer {
 ## Gutenberg styling
 --------------------------------------------------------------*/
 
-.wp-block-image figcaption {
+.wp-block-image figcaption,
+.wp-block-gallery .blocks-gallery-caption {
 	text-align: center;
 	font-size: 0.7em;
 }
