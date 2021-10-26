@@ -440,6 +440,14 @@ ol {
 	padding-left: 1em;
 }
 
+ol li {
+	list-style-position: inside;
+}
+
+ul li {
+	list-style-position: inside;
+}
+
 li > ul,
 li > ol {
 	margin-bottom: 0;
@@ -1175,7 +1183,9 @@ p.barely-visible-footer {
 /*--------------------------------------------------------------
 ## Entry content
 --------------------------------------------------------------*/
-.entry-content p a {
+.entry-content p a,
+.entry-content ol a,
+.entry-content ul a {
 	border-bottom: 1px solid rgba(148,148,166,0.6);
 }
 
