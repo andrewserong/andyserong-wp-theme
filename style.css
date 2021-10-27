@@ -4,7 +4,7 @@ Theme URI: https://github.com/andrewserong/andyserong-wp-theme
 Author: Andrew Serong
 Author URI: https://github.com/andrewserong
 Description: A one-off theme for andyserong.com
-Version: 1.0.21
+Version: 1.0.22
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: andyserong
@@ -696,6 +696,13 @@ a:active {
 	display: none;
 }
 
+@media screen and (min-width: 640px) {
+	.nav-links {
+		display: flex;
+		gap: 1em;
+	}
+}
+
 /* Gotta be a better selector for this */
 .nav-links a {
 	border-radius: 2px;
@@ -717,26 +724,51 @@ a:active {
 
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
-.post-navigation .nav-previous {
-	float: left;
-	width: 50%;
-	width: calc(50% - 0.5em);
-	position: relative;
-}
-
+.post-navigation .nav-previous,
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
-	float: right;
-	text-align: right;
-	width: 50%;
-	width: calc(50% - 0.5em);
 	position: relative;
+}
+
+.nav-btn-text {
+	line-height: 1.25;
+	padding: 0 3em;
+}
+
+@media screen and (min-width: 640px) {
+	.comment-navigation .nav-previous,
+	.posts-navigation .nav-previous,
+	.post-navigation .nav-previous {
+		/* float: left; */
+		width: 50%;
+		position: relative;
+	}
+
+	.comment-navigation .nav-next,
+	.posts-navigation .nav-next,
+	.post-navigation .nav-next {
+		/* float: right; */
+		text-align: right;
+		width: 50%;
+		position: relative;
+	}
+
+	.nav-previous .nav-btn-text {
+		padding-left: 2.5em;
+		padding-right: 1em;
+	}
+
+	.nav-next .nav-btn-text {
+		padding-right: 2.5em;
+		padding-left: 1em;
+	}
 }
 
 .nav-previous a, .nav-next a {
 	padding: 1em 0;
 	display: block;
+	position: relative;
 }
 
 .nav-prev__icon, .nav-next__icon {
@@ -759,20 +791,6 @@ a:active {
 	-webkit-transform: translateY(-50%);  /* Chrome, Opera 15+, Safari 3.1+ */
 	  -ms-transform: translateY(-50%);  /* IE 9 */
 		  transform: translateY(-50%);  /* Firefox 16+, IE 10+, Opera */
-}
-
-.nav-btn-text {
-	line-height: 1.25;
-}
-
-.nav-previous .nav-btn-text {
-	padding-left: 2.5em;
-	padding-right: 1em;
-}
-
-.nav-next .nav-btn-text {
-	padding-right: 2.5em;
-	padding-left: 1em;
 }
 
 /*--------------------------------------------------------------
@@ -1206,6 +1224,7 @@ p.barely-visible-footer {
 
 .post .entry-title, .page .entry-title {
 	margin-bottom: 0;
+	padding: 0 1rem;
 	text-align: center;
 }
 
